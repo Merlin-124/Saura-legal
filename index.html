@@ -98,7 +98,7 @@
     <header>
       <div class="tag">Saura</div>
       <h1 class="brand">Privacy Policy</h1>
-      <div class="updated">Last updated: <strong>November 15, 2026</strong> · Version 1.1</div>
+      <div class="updated">Last updated: <strong>November 15, 2026</strong> · Version 1.2</div>
     </header>
 
     <p>
@@ -135,6 +135,15 @@
         macro targets in the Nutrition tab; you can edit it in Settings). It
         is stored with your account record and is never shown to other
         users.</li>
+      <li><strong>Sign in with Apple</strong> (optional). If you choose
+        "Continue with Apple", Apple confirms your identity and gives us a
+        unique Apple user identifier and the email address you choose to
+        share. That may be a private relay address if you use "Hide My
+        Email". We use these only to create your account and sign you in. You
+        can stop using Sign in with Apple for Saura at any time in your Apple
+        Account settings. Apple's own handling of your data is covered by
+        <a href="https://www.apple.com/legal/privacy/en-ww/">Apple's Privacy
+        Policy</a>.</li>
     </ul>
 
     <h3>Health and body information</h3>
@@ -145,11 +154,22 @@
       <li>Workout logs: exercises, sets, reps, weights, dates.</li>
       <li>Nutrition logs: calories, macronutrients, water intake (if you
         choose to log them).</li>
-      <li>Recovery and activity data: sleep duration, resting heart rate,
-        heart-rate variability (HRV), steps, body weight, and body fat
-        percentage, if you connect <strong>Apple Health (HealthKit)</strong>
-        — read-only access, used only to power your in-app recovery and
-        progress features, never sold or used for advertising.</li>
+      <li><strong>Apple Health (HealthKit)</strong> — read-only, and only if
+        you connect it. With your permission, Saura reads: sleep (time asleep
+        and sleep stages), resting heart rate, heart rate variability (HRV),
+        walking heart rate average, heart-rate recovery, VO₂ max, breathing
+        (respiratory) rate, sleeping wrist temperature, blood oxygen, steps,
+        body weight, body fat percentage, and nutrition you've logged in other
+        apps (calories, protein, carbohydrates, fat and water). We use it only
+        to calculate your recovery score, show your sleep, vitals, body and
+        nutrition trends, and fill in your logs. A copy of these daily values
+        is stored with your account on our hosting provider (Supabase) so your
+        history works across devices, and it is deleted when you delete your
+        account. Saura never writes to Apple Health and never uses Health data
+        for advertising or marketing. It does not sell your Health data or
+        share it with anyone except Supabase, which stores it for us. You can
+        turn access off at any time in the Health app → your profile → Apps →
+        Saura.</li>
       <li>Progress photos (if you choose to upload them). Progress photos
         are stored in a private bucket and visible only to you; they are
         never shown to other users or in the social feed.</li>
@@ -172,6 +192,13 @@
         Stored only while you remain signed in on that device.</li>
       <li>IP address at sign-in (logged automatically by our authentication
         provider for security/fraud detection).</li>
+      <li>App usage events. To understand which features are used and improve
+        Saura, the app records a small set of events linked to your account,
+        such as opening the app, starting a workout, connecting Apple Health,
+        logging food, creating a routine, viewing the upgrade screen, or
+        viewing a weekly review. They stay in our own database, are never
+        shared with analytics or advertising companies, and are deleted when
+        you delete your account.</li>
     </ul>
 
     <h3>What we do NOT collect</h3>
@@ -192,6 +219,9 @@
       <li>Deliver push notifications you've enabled (likes, comments, friend
         PRs).</li>
       <li>Personalize the experience to your training goal and preferences.</li>
+      <li>Understand how features are used so we can improve Saura (usage
+        events described in section 2; legitimate interests where GDPR
+        applies).</li>
       <li>Detect and prevent abuse, spam, and harassment.</li>
     </ul>
 
@@ -206,14 +236,18 @@
         section 2. <a href="https://supabase.com/privacy">Supabase Privacy
         Policy</a>.</li>
       <li><strong>Expo</strong> — delivers push notifications via Apple's
-        push notification service. Receives only the push token and the
-        notification payload. The payload contains the notifying user's
+        push notification service and delivers app updates (when the app
+        checks for an update, Expo receives standard technical data such as
+        your IP address, device model and app version). For notifications it
+        receives the push token and the notification payload. The payload
+        contains the notifying user's
         display name and, for comments, a short sanitized preview of the
         comment text. <a href="https://expo.dev/privacy">Expo Privacy
         Policy</a>.</li>
       <li><strong>Apple</strong> — receives the notification payload
         (including the notifying user's display name and, for comments, a
-        short comment preview) to deliver pushes to your device. Apple's
+        short comment preview) to deliver pushes to your device, and, if you
+        use it, provides Sign in with Apple. Apple's
         data practices are governed by their
         <a href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>.</li>
       <li><strong>RevenueCat</strong> — manages and verifies your Saura Pro
@@ -250,6 +284,8 @@
       <li>Your avatar, post images, and progress photo files are deleted
         from storage.</li>
     </ul>
+    <p>Our hosting provider may keep automatic database backups for a limited
+      period; deleted data is removed from backups as they expire.</p>
     <p>Some operational logs (sign-in IPs, server access logs) are retained
       by our infrastructure provider for up to 90 days for security and
       abuse-prevention purposes (legitimate interest under GDPR Art.

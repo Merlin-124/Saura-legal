@@ -98,7 +98,7 @@
     <header>
       <div class="tag">Saura</div>
       <h1 class="brand">Privacy Policy</h1>
-      <div class="updated">Last updated: <strong>November 15, 2026</strong> · Version 1.2</div>
+      <div class="updated">Last updated: <strong>November 17, 2026</strong> · Version 1.4</div>
     </header>
 
     <p>
@@ -110,8 +110,13 @@
     </p>
 
     <p>
-      By using Saura, you agree to the practices described here. If you do not
-      agree, please don't use the app.
+      When you create an account or sign in, Saura asks you to review and accept
+      this Privacy Policy together with our
+      <a href="./terms.html">Terms of Use</a>, and keeps a record of what you
+      accepted and when (see section 2). If you do not agree, please don't use the
+      app. Residents of Washington, Nevada and other states with consumer health
+      data laws: see our
+      <a href="./consumer-health-data.html">Consumer Health Data Privacy Policy</a>.
     </p>
 
     <h2>1. Who we are</h2>
@@ -130,6 +135,15 @@
       <li>Password (stored only as a one-way hash by our authentication
         provider — we never see your plaintext password).</li>
       <li>Display name and avatar (if you provide them).</li>
+      <li>A record of your acceptance of our Terms and this Privacy Policy: the
+        version of each that you accepted, the date and time, how you accepted
+        (sign-up screen or the in-app Terms &amp; Privacy screen), the app version
+        and the platform. We keep it as proof of your consent and to know whether
+        you need to review an updated version. After you delete your account we
+        keep a minimal record of when you accepted which version of the Terms,
+        with your email address and account ID replaced by a one-way code (a
+        salted hash), for up to five years, only to prove an agreement if there
+        is a dispute. It contains no name, email address or account ID.</li>
       <li>Date of birth (collected at sign-up to verify you meet our minimum
         age of 16, and also used to work out your age for the calorie and
         macro targets in the Nutrition tab; you can edit it in Settings). It
@@ -154,8 +168,8 @@
       <li>Workout logs: exercises, sets, reps, weights, dates.</li>
       <li>Nutrition logs: calories, macronutrients, water intake (if you
         choose to log them).</li>
-      <li><strong>Apple Health (HealthKit)</strong> — read-only, and only if
-        you connect it. With your permission, Saura reads: sleep (time asleep
+      <li><strong>Apple Health (HealthKit)</strong> — only if you connect it.
+        With your permission, Saura reads: sleep (time asleep
         and sleep stages), resting heart rate, heart rate variability (HRV),
         walking heart rate average, heart-rate recovery, VO₂ max, breathing
         (respiratory) rate, sleeping wrist temperature, blood oxygen, steps,
@@ -165,11 +179,20 @@
         nutrition trends, and fill in your logs. A copy of these daily values
         is stored with your account on our hosting provider (Supabase) so your
         history works across devices, and it is deleted when you delete your
-        account. Saura never writes to Apple Health and never uses Health data
-        for advertising or marketing. It does not sell your Health data or
-        share it with anyone except Supabase, which stores it for us. You can
-        turn access off at any time in the Health app → your profile → Apps →
-        Saura.</li>
+        account. <strong>If you use the Saura Apple Watch app</strong>, it also
+        reads your heart rate and active energy while a workout is running, to
+        show them live on your watch and in your workout summary, and when you
+        finish the workout it saves that workout (a strength-training session
+        with its duration, heart rate and calories) to Apple Health, where you
+        can see or delete it in the Health app. Saura writes nothing else to
+        Apple Health. The Saura card on your watch (Smart Stack or watch face)
+        can also show your latest heart rate; that reading is read on your
+        watch and stays on your watch. The sets, reps and weights you log on your watch are
+        saved to your Saura account like any other workout. Saura never uses
+        Health data for advertising or marketing. It does not sell your Health
+        data or share it with anyone except Supabase, which stores it for us.
+        You can turn access off at any time in the Health app → your profile →
+        Apps → Saura.</li>
       <li>Progress photos (if you choose to upload them). Progress photos
         are stored in a private bucket and visible only to you; they are
         never shown to other users or in the social feed.</li>
@@ -182,8 +205,9 @@
         through the normal social-feed mechanics).</li>
       <li>Blocks you create (visible only to you — the blocked user is never
         notified).</li>
-      <li>Reports you file against other users or posts (visible only to you
-        and to our moderation review).</li>
+      <li>Reports you file against other users, posts or comments (visible only
+        to you and to our moderation review). We keep a copy of the reported
+        text with the report so we can review it even if it is deleted.</li>
     </ul>
 
     <h3>Device and technical information</h3>
@@ -199,14 +223,24 @@
         viewing a weekly review. They stay in our own database, are never
         shared with analytics or advertising companies, and are deleted when
         you delete your account.</li>
+      <li>Error and crash reports. If the app hits an error while you are signed
+        in, it sends a short report to our own database with your user ID, the
+        error message and technical details (such as which part of the app
+        failed), the app version and your device platform. We use these only to
+        find and fix bugs. They are not shared with analytics or advertising
+        companies and are deleted when you delete your account.</li>
     </ul>
 
-    <h3>What we do NOT collect</h3>
+    <h3>What we do NOT collect or do today</h3>
+    <p>As of the date at the top of this policy:</p>
     <ul>
       <li>We do not collect your precise location (no GPS access).</li>
       <li>We do not track you across other apps or websites.</li>
-      <li>We do not show third-party advertising and we do not share your
-        data with advertisers.</li>
+      <li>We do not sell your personal information, and we do not use your
+        Apple Health data, workout logs, body measurements, nutrition logs or
+        progress photos for advertising or marketing.</li>
+      <li>We do not currently show third-party advertising. See "Advertising"
+        in section 4 about advertising we plan to add.</li>
       <li>We do not use your training data to train external AI models.</li>
     </ul>
 
@@ -220,8 +254,7 @@
         PRs).</li>
       <li>Personalize the experience to your training goal and preferences.</li>
       <li>Understand how features are used so we can improve Saura (usage
-        events described in section 2; legitimate interests where GDPR
-        applies).</li>
+        events and error reports described in section 2).</li>
       <li>Detect and prevent abuse, spam, and harassment.</li>
     </ul>
 
@@ -258,15 +291,48 @@
         Policy</a>.</li>
     </ul>
 
+    <h3>Advertising (planned)</h3>
+    <p>Saura does not show third-party advertising today. We plan to earn
+      revenue from advertising in the future, for example advertisements or
+      sponsored placements in the social feed and affiliate links to retailers
+      such as Amazon. If you tap an affiliate link or an ad, the retailer or ad
+      provider receives the information your device sends when you open it
+      (such as your IP address, device type and the fact that you came from
+      Saura) and may use its own cookies or identifiers under its own privacy
+      policy; we do not give it your Saura account details. Before any
+      advertising starts we will update this policy to name the advertising
+      providers and the information they receive, and we will ask you to review and accept
+      the update. Where Apple or the law requires your permission first (for
+      example Apple's App Tracking Transparency prompt, or consent under
+      privacy laws), we will ask before any tracking or sharing for advertising
+      begins. We will never give advertisers or advertising providers your
+      Apple Health data, workout logs, body measurements, nutrition logs or
+      progress photos.</p>
+
     <h3>Other Saura users</h3>
     <p>If you post to the feed, follow another user, or comment on a post,
-      your display name, avatar, and that activity are visible to other
-      authenticated users of Saura. When you attach a workout to a post,
-      that workout's exercises, sets, reps, and weights become visible to
-      anyone who can view the post. Your sensitive data (weight, height,
-      sex, recovery readings, progress photos) is never visible to other
-      users — it is protected by our database access controls and a
-      private storage bucket.</p>
+      your display name, avatar, and that activity are visible to other Saura
+      users. Images and avatars are stored so that anyone who has the link to an
+      image can open it, even without a Saura account. If you turn on "Private
+      account" in Settings, only people you approve can follow you and see your
+      posts, but the image files themselves can still be opened by anyone who
+      has their exact link. When you attach a workout to a post, that workout's
+      exercises, sets, reps, and weights are visible to anyone who can view the
+      post.</p>
+    <p><strong>Goal board.</strong> The Goal board shows you and the people you
+      follow who train for the same goal as you. People who follow you and
+      share your goal can see your display name, your avatar, that you train for
+      the same goal, and your 0-100 training scores (consistency, progression
+      and balance). Your recovery score, which is calculated from your Apple
+      Health data, is shown only to you: it is never shown to other users and is
+      not used in the scores they see. Your weight, height, sex, nutrition logs,
+      Apple Health readings and progress photos are never shown to other
+      users.</p>
+
+    <h3>Links to other services</h3>
+    <p>Some screens link to YouTube search results for exercise demonstrations.
+      When you open one, YouTube (Google) receives your usual device information
+      under its own policy.</p>
 
     <h3>Legal requests</h3>
     <p>We may disclose information when required by law (subpoena, court
@@ -278,6 +344,9 @@
       you delete your account from inside the app:</p>
     <ul>
       <li>Your authentication record is permanently removed.</li>
+      <li>Your record of accepting our Terms and this policy is deleted,
+        except for the minimal record described in section 2 (kept up to five
+        years, without your name, email address or account ID).</li>
       <li>Your workouts, posts, comments, likes, follows, push tokens,
         recovery readings, nutrition logs, and progress photos are
         permanently deleted (cascade delete).</li>
@@ -286,10 +355,27 @@
     </ul>
     <p>Our hosting provider may keep automatic database backups for a limited
       period; deleted data is removed from backups as they expire.</p>
+    <p>What deleting your account does not do:</p>
+    <ul>
+      <li><strong>Subscription records.</strong> Our subscription provider,
+        RevenueCat, keeps purchase and subscription records linked to your
+        Saura user ID under its own retention rules. Deleting your Saura account
+        does not delete those records and does not cancel your subscription:
+        cancel it first in your iPhone Settings, then your name, then
+        Subscriptions. Apple keeps its own purchase records.</li>
+      <li><strong>Information we may have to keep.</strong> We may keep limited
+        information after deletion where the law requires it or to deal with a
+        legal claim. For example, content reported as child sexual abuse
+        material and related account details must be preserved and reported as
+        the law requires.</li>
+      <li><strong>Sign in with Apple.</strong> If you used Sign in with Apple,
+        Saura asks Apple to disconnect it when you delete your account. You can
+        also remove Saura yourself in your Apple Account settings under Sign in
+        with Apple.</li>
+    </ul>
     <p>Some operational logs (sign-in IPs, server access logs) are retained
       by our infrastructure provider for up to 90 days for security and
-      abuse-prevention purposes (legitimate interest under GDPR Art.
-      6(1)(f) where applicable), after which they are automatically purged.</p>
+      abuse-prevention purposes, after which they are automatically purged.</p>
 
     <h2>6. Your rights</h2>
     <p>Depending on where you live, you have one or more of the following
@@ -310,68 +396,45 @@
 
     <p>To exercise any of these rights, email
       <a href="mailto:saura.app.help@gmail.com">saura.app.help@gmail.com</a>.
-      We respond within 30 days.</p>
+      We respond within 30 days. If we need more time (up to 45 days in
+      total), we will tell you why.</p>
 
-    <h3>Legal basis (EU/UK/EEA residents)</h3>
-    <p>This section applies if you are a resident of the EU, UK, or EEA. We
-      process your data on the following legal bases:</p>
-    <ul>
-      <li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — to
-        provide the core app features you've signed up for.</li>
-      <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — to detect
-        and prevent abuse, spam, and harassment, and to keep the service
-        secure.</li>
-      <li><strong>Consent</strong> (Art. 6(1)(a)) — for push notifications
-        and progress photos, which you can withdraw at any time in
-        Settings.</li>
-    </ul>
-    <p><strong>Right to complain.</strong> If you believe we have mishandled
-      your data, you may lodge a complaint with your local data protection
-      authority. A list is maintained by the European Data Protection Board
-      at <a href="https://edpb.europa.eu">edpb.europa.eu</a>.</p>
+    <h3>Where Saura is offered</h3>
+    <p>Saura is currently offered only outside the European Union, the European
+      Economic Area and the United Kingdom. If you are located there, please do
+      not use Saura.</p>
     <p><strong>Providing data.</strong> Providing your email and password is
       required to create an account; everything else (display name, height,
       weight, photos, etc.) is optional. We do not use automated
       decision-making that produces legal effects.</p>
 
-    <h2>7. California Privacy Rights</h2>
-    <p>This section applies if you are a California resident. The California
-      Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA)
-      give you the following rights:</p>
-    <ul>
-      <li><strong>Right to know</strong> what categories of personal
-        information we collect, the sources, the business purposes, and the
-        third parties we share it with — all described in sections 2 and 4
-        of this policy.</li>
-      <li><strong>Right to delete</strong> your personal information —
-        exercise this by deleting your account in Settings or by emailing
-        us.</li>
-      <li><strong>Right to correct</strong> inaccurate personal
-        information.</li>
-      <li><strong>Right to opt out of sale or sharing.</strong> <strong>Saura
-        does not sell or share your personal information</strong>, as those
-        terms are defined under the CCPA/CPRA. We have not sold or shared
-        personal information in the preceding twelve months.</li>
-      <li><strong>Right to non-discrimination</strong> for exercising any of
-        the above rights.</li>
-    </ul>
-    <p>Submit any California rights request to the contact address in section
-      12; we verify identity by confirming control of the account email and
-      respond within 45 days.</p>
-    <p><strong>Categories of personal information collected (CCPA
-      taxonomy):</strong> identifiers (email, user ID), customer records
-      (name, avatar, date of birth), internet/network activity (sign-in IP),
-      geolocation
-      (none), biometric (none), sensory (photos you upload), professional
-      (none), education (none), inferences (training analytics computed from
-      your workouts).</p>
-    <p><strong>Categories of sources:</strong> directly from you.</p>
-    <p><strong>Business purposes:</strong> providing the app, security and
-      fraud prevention, communicating with you.</p>
-    <p><strong>Third parties with whom information is shared:</strong>
-      Supabase, Expo, and RevenueCat, as service providers under written
-      agreements that prohibit use of your data for any purpose other than
-      running Saura on our behalf.</p>
+    <h2>7. California and other U.S. state privacy rights</h2>
+    <p>Saura is a small, independently run app and is not currently a
+      "business" covered by the California Consumer Privacy Act (CCPA/CPRA). We
+      still offer everyone, including California residents, these choices: to
+      know what personal information we hold, to have it deleted, to have it
+      corrected, and to not be treated differently for using these rights.
+      Saura does not sell or share personal information (as those terms are used
+      in the CCPA), and we use health information only to provide the features
+      you ask for. If we introduce advertising (see "Advertising" in section 4),
+      we will update this section before it starts.</p>
+    <p>Submit any request to the contact address in section 12; we verify
+      identity by confirming control of the account email and respond as
+      described in section 6.</p>
+    <p><strong>Categories we collect:</strong> identifiers (email, user ID,
+      Apple identifier, push token, IP address at sign-in); customer records
+      (display name, avatar, date of birth); characteristics (age, sex); health
+      and body information (weight, height, body fat, workouts, nutrition logs,
+      and Apple Health readings if you connect it); photos and videos you
+      upload; app activity (usage events and error reports); commercial
+      information (subscription status); and inferences (training and recovery
+      scores).</p>
+    <p><strong>Sources:</strong> directly from you and, with your permission,
+      Apple Health.</p>
+    <p><strong>Purposes:</strong> providing the app, security and fraud
+      prevention, fixing bugs, communicating with you.</p>
+    <p><strong>Service providers who process it for us:</strong> Supabase, Expo,
+      RevenueCat and Apple.</p>
 
     <h2>8. Children's privacy</h2>
     <p>Saura is intended for users <strong>aged 16 and older</strong>. We
@@ -389,33 +452,38 @@
     <p>We use the following safeguards to protect your data:</p>
     <ul>
       <li>HTTPS encryption for all data in transit.</li>
-      <li>Row-level security policies that scope every database query to
-        the authenticated user.</li>
-      <li>A private storage bucket for progress photos, accessed only via
-        short-lived signed URLs.</li>
-      <li>One-way password hashing — we never store plaintext passwords.</li>
-      <li>Mandatory email confirmation at sign-up.</li>
+      <li>Access rules in our database (row-level security) that limit who can
+        read and change each record. Content you choose to share, such as
+        posts, can be read by the people who can view it.</li>
+      <li>A private storage bucket for progress photos, accessed only through
+        short-lived signed links.</li>
+      <li>One-way password hashing: we never store plaintext passwords.</li>
+      <li>Email confirmation for accounts created with an email address.</li>
     </ul>
-    <p>No system is perfectly secure. If a breach occurs that materially
-      affects you, we will notify you and the relevant authorities as
-      required by law.</p>
+    <p>No system is perfectly secure. If a breach affects your personal
+      information, we will tell you without unreasonable delay and in any case
+      within the time the law requires (for health information, no later than 60
+      days after we discover it), and we will notify the authorities where
+      required.</p>
 
     <h2>10. International data transfers</h2>
     <p>Saura is operated from the United States. Our infrastructure
       providers (Supabase, Expo) may process data in the United States and
-      other jurisdictions. For transfers of personal data out of the EEA,
-      these providers rely on Standard Contractual Clauses approved by the
-      European Commission. See
+      other countries. See
       <a href="https://supabase.com/privacy">Supabase's</a> and
       <a href="https://expo.dev/privacy">Expo's</a> privacy policies for
       details.</p>
 
     <h2>11. Changes to this policy</h2>
     <p>We will update this policy when our data practices change. The "Last
-      updated" date at the top reflects the latest version. Where feasible,
-      material changes will be announced in the app and/or by email at least
-      14 days before they take effect. Continued use of Saura after a change
-      indicates acceptance of the updated policy.</p>
+      updated" date and version at the top reflect the latest version. If a
+      change is material (for example a new kind of data collected, a new way
+      we use or share it, or advertising), we will tell you in the app and ask
+      you to review and accept the updated policy before you continue; where
+      feasible we announce it in the app and/or by email at least 14 days
+      before it takes effect. Changes that do not reduce your rights or add new uses of your data, such as
+      clarifications or typo fixes, take effect when posted. We keep a copy of
+      each version we have published.</p>
 
     <h2>12. Contact</h2>
     <p>
